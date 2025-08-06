@@ -96,16 +96,6 @@ const CARDS = [
     synonyms: "underthrusting (technical)",
     notes: "通常發生於 *oceanic–continental* 或 *oceanic–oceanic* 交界。"
   },
-  {
-    word: "lithosphere",
-    definition:
-      "The rigid outer layer of the Earth, comprising the crust and the uppermost mantle.",
-    example:
-      "The lithosphere is broken into several tectonic plates that float on the semi-fluid asthenosphere beneath.",
-    synonyms: "Earth’s crust, outer shell",
-    notes:
-      "⚠️ 拼字注意：lithosphere（非 lihosphere）。"
-  }
 ];
 
 module.exports = CARDS; // 匯出更新後的陣列
