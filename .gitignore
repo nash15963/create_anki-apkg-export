@@ -11,3 +11,4 @@ dist/
 *.orig
 *.swo
 *.zip   
+*.gen*

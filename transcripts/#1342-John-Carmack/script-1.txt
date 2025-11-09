@@ -1,0 +1,77 @@
+// (00:00 - 00:26:00)
+
+-Joe Rogan:- Here we go. How are you, sir?
+
+-John Carmack:- I'm doing good.
+
+-Joe Rogan:- I'm super happy to have you here. If there is a **Mount Rushmore** of video games, you are George Washington—you're up there. So this is great. People have been kind of **nudging** us for years and years to get this done, so it's great that we're finally able to make it happen.
+
+-Joe Rogan:- Yeah, I have been, from day one, a gigantic Quake junkie and a Doom junkie. So for me, to have you in here is a giant treat. And everybody—you know, I've talked about your video games and your creations so many times on this podcast—so it's very cool to have you here. And thank you very much for showing me, before the podcast got started—I should tell everybody—you showed me the latest and greatest version of Oculus Rift, which is amazing. It's so small. For people watching on YouTube, this is the entire unit—this thing that sits on your head. It's very light, and it's not attached to a computer. Like, you don't have to carry anything around, and there's no extra... everything is in here.
+
+-John Carmack:- Yeah, so this is the **Oculus** Quest, the **standalone** device. And it's been kind of the **culmination** of a bunch of different accidents we've been working on. And it's the vision that we had even six years ago—just the idea of not being connected to anything. You put this magic hat on, and you're transported to these different worlds. And this is available right now. Anyone can buy this, right?
+
+-Joe Rogan:- Yeah, okay. So it's available. Jamie just actually pulled up the website. Can I push this up to you? Pull that... yeah, there you go. How... what is the battery life on these things?
+
+-John Carmack:- So it depends on what you're doing. Where, if you just sit there and watch Netflix, you know, it'll last a little more than three hours. If you play some of the really hardcore games, it might only last two hours or so.
+
+-Joe Rogan:- Do you have numbers on how many people are watching Netflix on this thing?
+
+-John Carmack:- So our previous one, right before this—the Oculus Go—was a little bit more media-focused, and that's one of our more popular applications. I mean, surprisingly, things... everybody thought that VR was going to be all about these just amazing gaming experiences. But some of the most popular experiences are doing reasonably **conventional** things: watching Netflix, watching YouTube, Amazon Prime, stuff like that. Where, if you're like... if you are, and you've got a great home theater and everything, there's not this much benefit to having a theater like that in VR. But if you're in a situation like you're in a tiny room in Tokyo or something, the idea of being able to put on the VR headset and have this, like, lovely **ski lodge** atmosphere with a giant-screen TV—it has some real benefits.
+
+So, in the end, VR should be a replacement for anything you do on screens today, whether it's your phone, your tablet, your TV, your laptop, your PC. All of these should eventually be **superseded** by just having more flexible screens in VR. And we have lots of challenges now with resolution and comfort for long-term use. But this is the direction that everything's going. Not only do you have things in VR that you couldn't do anywhere else—just experiences that you can't have with that level of **immersion**—but it should pull along every other thing that people do with screen devices today.
+
+-Joe Rogan:- That's... I didn't consider television shows, but of course people would be watching Netflix on this if it's possible. Have you done the Disney World ride, the Avatar ride, **Flight of Passage**?
+
+-John Carmack:- No, I haven't done that yet.
+
+-Joe Rogan:- It's amazing. You sit on this... it's like a motorcycle-looking thing. It traps you in place, and it's supposed to represent one of those flying dragon things in Avatar. And then you have the headset—you put that on—and the virtual reality experience is second to none. I mean, it's incredible. Super high resolution. And the motorcycle's moving around, you get wind and smells, and all these sensory...
+
+-John Carmack:- And so that's one of the really interesting things. Like, I think about that whenever I am at **amusement** parks for things like the Harry Potter rides and stuff like that, where they're doing lots with screens and motion platforms. Where I think about it from the VR perspective, and anything we're doing visually and audibly, we could go ahead and do a great job in the headset. So it's cutting it down to these few physical things that you can't do. So you've got things with motion platforms that actually **jostle** you around that you can't do in VR. You've got things like smell. And like The Void, where they have the Star Wars experience there—we have a fantastic Star Wars experience on Quest, which in many ways has a lot of that magic. But in The Void, where they set it up and they blow hot air over what's the virtual lava towards you—that's something that you still don't get.
+
+But it's kind of like the age-old battle of: what can you do differently in an **arcade** that you can't do as good in your home system? And VR now takes... lets you do all of these amazing things there. But if you're willing to spend millions of dollars and build a theme park attraction, essentially, you can still throw some of these extra things in.
+
+People joke about: when is smell-o-vision coming to VR? And there have actually been real companies that have **spun up** to say, "Oh, we want to do scent **augmentation**." Yeah, it's not a great thing. And those are still the last **vestiges** of things where you have to go someplace. But the promise of VR is, you know, the world as you want it—not having to go to some place to do something magical. And if you can get to 90-something percent of that experience staying in your own room, then that's great.
+
+-Joe Rogan:- What would they be able to do with smell-o-vision? Would you have, like, a standalone unit that has access to the program? So like, if you were flying over orange fields, it would **spray** **citrus** in the air? Sort of like "**Soaring Over** the World"—have you ever done that Disneyland ride?
+
+-John Carmack:- So they let... somebody literally did make us—where they made a little box that **glued to attach** to the underside of the **head-mounted display**. And one of the interesting things about **scent**, **as opposed to**, like, audio or video—with video, everybody knows that you just make red, green, and blue colors. You can mix them in any way and make all the colors that we can see. Smell isn't like that. And our nose is actually a receptor for a whole lot of discrete different **molecules**. There's no way to mix up smell like the way we do with light to make red, green, and blue primaries with that.
+
+So they really had to pick, "Okay, here's the dozen or so smells that we're going to have with this." And it would just sort of **spritz it out** on a little **blast** of air, very close to your nose, so it doesn't need much of it to get in.
+
+Hmm. So if you really wanted to do some sort of a jungle experience with, you know, thousands of different smells of plants and dirt and all that, you would have to have, like, some **enormous** unit that's spraying these various things?
+
+-John Carmack:- Yeah, although I suspect that at least modern people in modern society do not really have that **discerning** of a level of scent. Like, if you took some **Peruvian** **indigenous** person or something, they probably would complain like, "The **fidelity** on this is garbage. I should have 500 different smells here, and I only detect five." Right? But you take, you know, a normal city person, and you just... three scents of jungle is probably going to be more than enough to sell the experience.
+
+-Joe Rogan:- Yeah, the guy in the jungle would be like, "This is **sterile**. You're in... it's not real."
+
+So what is this, Jamie?
+
+-Jamie:- Oh my goodness.
+
+-Joe Rogan:- Oh my goodness! So this is something she's holding. I know, I get it. She's pulled it off. It attaches to the headset. It says "FeelReal Sensory Mask." So it's a sensory mask that smells... Virtual reality? Oh yeah! It's... so it simulates hundreds of smells to immerse you in the virtual world.
+
+Wow. Of course it's coming! But why am I shocked? Look at this guy—he's got, like, a little **cartridge**. He's popping it in there. We'll all... that... refilling your **toner** **cartridge**! How reliable... scent generator! How hilarious!
+
+-John Carmack:- But yes, if you have to... if you have to rank your senses, that's not in the top two.
+
+-Joe Rogan:- Yeah.
+
+-John Carmack:- Well, it's probably going to be clunky, like the earlier versions of VR where you got that low-resolution sort of thing. I remember my friend Duncan—he's a huge technology freak—and he had a really early version of the consumer virtual reality headsets, the early, early Oculus. And I remember putting it on, going, "Oh my God, even though it's really **pixelated**, like, this is a game-changer." Like, that sense that you've seen the future.
+
+-Joe Rogan:- Yeah, put it on. It's like, it's not here yet, but that's the ability to just project a little bit past the **flaws** there and say, "Okay, we're going to sort this out over the next several years. We'll get higher resolution. We'll get the response better." And you can imagine what it's going to be.
+
+-John Carmack:- Yeah, it's pretty stunning. And what you just showed me today—the Star Wars one—is actually higher resolution than The Void, which is the one that you pay to go see, or that you go into the warehouse and everything. I've done that several times—The Void with Star Wars, and The Void with Wreck-It Ralph, which is pretty cool too. It's really fun.
+
+But the physicality of having the actual props there is the magic of being in there. It's like you pull out your Stormtrooper **blaster** and cap it around, and that's really something. Versus a lot of times when you're just using the controllers to pretend you're doing things, you feel like you're a mime someplace—some French mime kind of pretending to do things. And that doesn't sell the experience.
+
+And that's why, you know, my favorites are the things like Beat Saber, where in the game, you are swinging this lightsaber sort of thing through things. So your actions in reality are exactly what your actions in the virtual world are. Swing through it—there's a little bit of a buzz as you cross through it—and it just feels like you are getting yourself there.
+
+-Joe Rogan:- Now, what about the possibility of a **haptic** feedback vest or a suit or something you can put on your body?
+
+-John Carmack:- So there's the interesting things... All the way back into the Doom and Quake days, I remember one of the really early... kind of entrepreneur guys that came by. He had made this leather jacket with all these impact **pucks** on it, and it had, like, eight or nine different things that were the **solenoids** that could deliver pretty sharp **thuds**. And he wanted to, you know, get support added to the games for that. The idea: you play that, and when you're getting shot, it actually feels like you're getting hit in the back.
+
+And, you know, I didn't think that was a very likely... I am... mass-market consumer thing. I mean, not too many people want that level of **fidelity** where it actually starts making you sore.
+
+But that's one of the wonderful things about being able to open-source the various codes after the games are a little bit older, or where anybody that wants to can nowadays go and take Doom or Quake or those earlier titles and program in for whatever crazy thing they want. They don't have to convince someone. They don't have to go convince **skeptical** John Carmack that this device is going to be a worthwhile thing to add support to the mainline code. They can just go do it, which is a wonderful thing.
+
+-Joe Rogan:- That is very cool that you guys do that. I think that's really cool.
