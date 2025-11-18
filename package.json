@@ -7,9 +7,13 @@
     "create": "node create_deck.cjs",
     "create-md": "node create_deck_from_md.cjs",
     "extract": "node extract_keywords.cjs",
+    "subtitle": "node download_yt_subtitle.cjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "youtube-transcript-plus": "^1.1.1"
+  }
 }

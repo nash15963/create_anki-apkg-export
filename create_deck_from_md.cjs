@@ -5,21 +5,30 @@ const path = require("path");
 // 從命令列參數獲取檔案名稱
 const args = process.argv.slice(2);
 if (args.length === 0) {
-  console.error("請提供 markdown 檔案名稱作為參數");
-  console.error("使用方式: node ./create_deck_from_md.cjs <檔案名稱>");
-  console.error("範例: node ./create_deck_from_md.cjs vocab_1.md");
-  console.error("或: node ./create_deck_from_md.cjs vocab_1 (會自動加上 .md)");
+  console.error("請提供 markdown 檔案名稱或路徑作為參數");
+  console.error("使用方式: node ./create_deck_from_md.cjs <檔案名稱或路徑>");
+  console.error("範例:");
+  console.error("  - node ./create_deck_from_md.cjs vocab_1.md");
+  console.error("  - node ./create_deck_from_md.cjs vocab_1 (會自動加上 .md)");
+  console.error("  - node ./create_deck_from_md.cjs vocabularies/card_22.md");
   process.exit(1);
 }
 
 // 處理輸入檔案名稱
 let inputFileName = args[0];
-if (!inputFileName.endsWith(".md")) {
-  inputFileName += ".md";
-}
+let markdownPath;
 
-// 建立檔案路徑
-const markdownPath = path.resolve(__dirname, "vocabularies", inputFileName);
+// 檢查是否為完整路徑（包含路徑分隔符號）
+if (inputFileName.includes("/") || inputFileName.includes("\\")) {
+  // 使用完整路徑
+  markdownPath = path.resolve(__dirname, inputFileName);
+} else {
+  // 只有檔案名稱，使用預設的 vocabularies 目錄
+  if (!inputFileName.endsWith(".md")) {
+    inputFileName += ".md";
+  }
+  markdownPath = path.resolve(__dirname, "vocabularies", inputFileName);
+}
 
 // 檢查檔案是否存在
 if (!fs.existsSync(markdownPath)) {
@@ -32,7 +41,7 @@ if (!fs.existsSync(markdownPath)) {
 let markdownContent;
 try {
   markdownContent = fs.readFileSync(markdownPath, "utf8");
-  console.log(`成功載入 ${inputFileName}`);
+  console.log(`成功載入 ${path.basename(markdownPath)}`);
 } catch (error) {
   console.error(`讀取檔案時發生錯誤: ${error.message}`);
   process.exit(1);
@@ -84,7 +93,7 @@ if (cards.length === 0) {
 }
 
 // 從檔案名稱生成輸出名稱
-const baseName = inputFileName.replace(".md", "");
+const baseName = path.basename(markdownPath, path.extname(markdownPath));
 const outputFileName = `anki_vocabulary_${baseName}.csv`;
 
 // 準備 CSV 內容

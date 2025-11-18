@@ -5,21 +5,30 @@ const path = require("path");
 // 從命令列參數獲取檔案名稱
 const args = process.argv.slice(2);
 if (args.length === 0) {
-  console.error("請提供檔案名稱作為參數");
-  console.error("使用方式: node ./create_deck_csv.cjs <檔案名稱>");
-  console.error("範例: node ./create_deck_csv.cjs card_3.cjs");
-  console.error("或: node ./create_deck_csv.cjs card_3 (會自動加上 .cjs)");
+  console.error("請提供檔案名稱或路徑作為參數");
+  console.error("使用方式: node ./create_deck_csv.cjs <檔案名稱或路徑>");
+  console.error("範例:");
+  console.error("  - node ./create_deck_csv.cjs card_3.cjs");
+  console.error("  - node ./create_deck_csv.cjs card_3 (會自動加上 .cjs)");
+  console.error("  - node ./create_deck_csv.cjs vocabularies/card_22.md");
   process.exit(1);
 }
 
 // 處理輸入檔案名稱
 let inputFileName = args[0];
-if (!inputFileName.endsWith(".cjs")) {
-  inputFileName += ".cjs";
-}
+let vocabularyPath;
 
-// 建立檔案路徑
-const vocabularyPath = path.resolve(__dirname, "vocabularies", inputFileName);
+// 檢查是否為完整路徑（包含路徑分隔符號）
+if (inputFileName.includes("/") || inputFileName.includes("\\")) {
+  // 使用完整路徑
+  vocabularyPath = path.resolve(__dirname, inputFileName);
+} else {
+  // 只有檔案名稱，使用預設的 vocabularies 目錄
+  if (!inputFileName.endsWith(".cjs") && !inputFileName.endsWith(".md")) {
+    inputFileName += ".cjs";
+  }
+  vocabularyPath = path.resolve(__dirname, "vocabularies", inputFileName);
+}
 
 // 檢查檔案是否存在
 if (!fs.existsSync(vocabularyPath)) {
@@ -32,14 +41,14 @@ if (!fs.existsSync(vocabularyPath)) {
 let CARDS;
 try {
   CARDS = require(vocabularyPath);
-  console.log(`成功載入 ${inputFileName}，共 ${CARDS.length} 張卡片`);
+  console.log(`成功載入 ${path.basename(vocabularyPath)}，共 ${CARDS.length} 張卡片`);
 } catch (error) {
   console.error(`載入檔案時發生錯誤: ${error.message}`);
   process.exit(1);
 }
 
 // 從檔案名稱生成輸出名稱
-const baseName = inputFileName.replace(".cjs", "");
+const baseName = path.basename(vocabularyPath, path.extname(vocabularyPath));
 const outputFileName = `anki_vocabulary_${baseName}.csv`;
 
 // 準備 CSV 內容
